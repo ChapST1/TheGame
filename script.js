@@ -73,14 +73,14 @@ function start() {
   setTimeout(() => {
     if (index == 0 && counter.textContent < "40") {
       modalGameOver.innerHTML =
-        '<h1 class="game-over-title">GAME OVER</h1> <br><audio src="/src/loser.mp3" autoplay loop></audio> <br> <img src="/src/img/1.gif" alt="" class="modal-game-over-img"> <br> <button id="btn-reestart" class="modal__btn modal__btn--2">Reestart</button>';
+        '<h1 class="game-over-title">GAME OVER</h1> <br><audio src="src/loser.mp3" autoplay loop></audio> <br> <img src="src/img/1.gif" alt="" class="modal-game-over-img"> <br> <button id="btn-reestart" class="modal__btn modal__btn--2">Reestart</button>';
       modalGameOver.style.display = "flex";
       modalGameOver.style.flexDirection = "column";
 
       let btnResstart = document.querySelector("#btn-reestart");
 
       btnResstart.addEventListener("click", () => {
-        window.location.href = "/index.html";
+        window.location.href = "/TheGame/index.html";
       });
     }
   }, 25000);
@@ -121,9 +121,9 @@ function start() {
       eyebrowsUno.classList.add("eyebrows-one-5-level");
       head.classList.add("fin");
       modalWin.style.transform = "scale(1)";
-      winSound.setAttribute("src", "/src/win.mp3");
+      winSound.setAttribute("src", "src/win.mp3");
       buttonWin.addEventListener("click", () => {
-        window.location.href = "/index.html";
+        window.location.href = "/TheGame/index.html";
       });
     }
 
