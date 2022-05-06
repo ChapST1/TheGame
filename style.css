@@ -1,29 +1,31 @@
 /*FONTS*/
-
 @import url("https://fonts.googleapis.com/css2?family=Shojumaru&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
 body {
   width: 100%;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background: #1d1c1c;
   overflow: hidden;
 }
+
 /*SECTION START*/
 .modal-start {
   width: 100%;
   height: 100vh;
   background: rgba(0, 0, 0, 0.801);
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   z-index: 10000;
   backdrop-filter: blur(10px);
@@ -61,6 +63,7 @@ body {
   transition: 0.5s;
   padding: 8px 25px;
   border-radius: 8px;
+  font-family: "Radio Canada", sans-serif;
 }
 .modal__btn:hover,
 .modal__btn__tutorial:hover,
@@ -85,14 +88,13 @@ body {
   height: 100vh;
   background: rgba(0, 0, 0, 0.801);
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   z-index: 20000;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
   transform: translateX(100%);
   transition: 0.5s;
   gap: 40px;
@@ -131,13 +133,13 @@ body {
   height: 100vh;
   position: fixed;
   left: 0;
-  top: 0;
+  bottom: 0;
   background: rgba(5, 5, 5, 0.836);
   z-index: 500000;
-  display: none;
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(10px);
+  display: none;
 }
 
 .modal-game-over-img {
@@ -159,7 +161,7 @@ body {
   width: 100%;
   height: 100vh;
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.801);
   z-index: 10000;
@@ -321,11 +323,12 @@ body {
 .balls {
   width: 60px;
   height: 60px;
-  background: red;
+  background: #ffd100;
   position: absolute;
   border-radius: 50%;
   cursor: pointer;
   transform: translate(-50%, -50%);
+  transition: 0.3s;
 }
 /*COUNTER style*/
 .counter-container {
@@ -333,8 +336,8 @@ body {
   height: 60px;
   position: absolute;
   top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0%;
+  font-family: "Radio Canada", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -365,7 +368,7 @@ body {
 /*RESPONSIVE DESING*/
 @media (max-width: 700px) {
   .modal__title {
-    font-size: 40px;
+    font-size: 50px;
   }
   .modal__btn,
   .modal__btn--2,
@@ -422,6 +425,9 @@ body {
 }
 /*MOBILE*/
 @media (max-width: 450px) {
+  .modal__title {
+    font-size: 40px;
+  }
   /*Modals*/
   .modal-tutorial {
     font-size: 35px;
@@ -432,7 +438,10 @@ body {
     gap: 60px;
   }
   .modal-game-over {
+    min-width: 100%;
+    height: 100vh;
     font-size: 30px;
+    gap: 0;
   }
   .modal-game-over-img {
     width: 80%;
