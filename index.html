@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
     <title>TheGame</title>
 
@@ -14,9 +13,8 @@
     ></script>
   </head>
   <body>
-    <!--SOUND "tap"-->
-    <audio class="tap" src="src/tap.mp3"></audio>
-
+    <!--sound tap-->
+    <audio class="tap"></audio>
     <!--SECTION START-->
     <div class="modal-start">
       <h2 class="modal__title">
@@ -26,14 +24,17 @@
         <button class="modal__btn">Start</button>
         <button class="modal__btn__tutorial">Tutorial</button>
       </div>
-      <cite class="dev">By <a href="#">ChapST1</a></cite>
+      <cite class="dev"
+        >By
+        <a href="https://github.com/ChapST1" target="__blank">ChapST1</a></cite
+      >
     </div>
 
     <!--SECTION TUTORIAL-->
     <div class="modal-tutorial">
       <h2 class="modal__title">TUTORIAL</h2>
       <div class="modal-rules-tutorial">
-        <img src="src/img/tutorial.jpg" alt="" class="modal-tutorial-img" />
+        <img src="/src/img/tutorial.jpg" alt="" class="modal-tutorial-img" />
       </div>
       <i id="close-modal-tutorial" class="fa-solid fa-circle-left"></i>
     </div>
@@ -44,12 +45,13 @@
     <!--SECTION WIN-->
     <section class="modal-win">
       <h2 class="modal__title">YOU WIN</h2>
-      <img src="src/img/win.gif" alt="img" class="modal-win-img" />
+      <img src="/src/img/win.gif" alt="img" class="modal-win-img" />
       <button class="modal__btn__win">Home</button>
       <audio class="modal-win-sound" loop="true" autoplay="true"></audio>
     </section>
 
     <!--HEAD-->
+
     <div class="head">
       <div class="eye-1 eyebrows">
         <div class="pupil-1 pupils"></div>
@@ -68,9 +70,8 @@
     </div>
 
     <div class="line">
-      <span class="line-counter"> </span>
+      <span class="line-counter"></span>
     </div>
-
     <!--script js-->
     <script src="script.js"></script>
   </body>
