@@ -26,7 +26,30 @@ let colors = [
   "8338ec",
   "212529",
   "cddafd",
-  "222"
+  "222",
+  "fb8500",
+  "a8dadc",
+  "ff006e",
+  "073b4c",
+  "06d6a0",
+  "735d78",
+  "660708",
+  "fee440",
+  "#ffd100",
+  "468faf",
+  "00f5d4",
+  "4c956c",
+  "fcd5ce",
+  "33415c",
+  "660708",
+  "ccff33",
+  "b392ac",
+  "adc178",
+  "fdfcdc",
+  "723d46",
+  "f1faee",
+  "fff",
+  "6b705c"
 ];
 
 //SECTION EYES
@@ -88,8 +111,8 @@ function start() {
   //balls "tap"
   element.addEventListener("click", (e) => {
     //SOUND "TAP"
-    tapSound.innerHTML =
-      '<audio class="tap" src="src/tap.mp3" autoplay></audio>';
+
+    tapSound.setAttribute("src", "src/tap.mp3");
 
     //COUNTER
     counter.textContent = i++;
@@ -122,6 +145,7 @@ function start() {
       head.classList.add("fin");
       modalWin.style.transform = "scale(1)";
       winSound.setAttribute("src", "src/win.mp3");
+      s;
       buttonWin.addEventListener("click", () => {
         window.location.href = "/TheGame/index.html";
       });
@@ -131,11 +155,9 @@ function start() {
     let x = Math.round(Math.random() * 100);
     let y = Math.round(Math.random() * 100);
 
-    if (x < 90 && y < 90) {
-      element.style.left = x + "vw";
-      element.style.top = y + "vh";
-      element.style.background =
-        "#" + colors[Math.floor(Math.random() * colors.length - 1)];
-    }
+    element.style.left = x + "vw";
+    element.style.top = y + "vh";
+    element.style.background =
+      "#" + colors[Math.floor(Math.random() * colors.length - 1)];
   });
 }
