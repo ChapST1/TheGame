@@ -90,7 +90,7 @@ function start() {
   let index;
   for (index = 100; index > 0; index--) {
     counterLine.style.height = index - 1 + "%";
-    counterLine.style.transition = 25 + "s";
+    counterLine.style.transition = 30 + "s";
   }
 
   setTimeout(() => {
@@ -106,7 +106,7 @@ function start() {
         window.location.href = "/TheGame/index.html";
       });
     }
-  }, 25000);
+  }, 30000);
 
   //balls "tap"
   element.addEventListener("click", (e) => {
