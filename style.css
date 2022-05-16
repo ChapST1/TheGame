@@ -22,7 +22,7 @@ body {
 /*SECTION START*/
 .modal-start {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: rgba(0, 0, 0, 0.801);
   position: fixed;
   bottom: 0;
@@ -85,7 +85,7 @@ body {
 /*SECTION TUTORIAL*/
 .modal-tutorial {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: rgba(0, 0, 0, 0.801);
   position: fixed;
   bottom: 0;
@@ -130,7 +130,7 @@ body {
 /*SECTION GAME OVER*/
 .modal-game-over {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -159,7 +159,7 @@ body {
 /*SECTION WIN*/
 .modal-win {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: fixed;
   bottom: 0;
   left: 0;
