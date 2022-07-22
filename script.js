@@ -96,7 +96,7 @@ function start() {
   setTimeout(() => {
     if (index == 0 && counter.textContent < "40") {
       modalGameOver.innerHTML =
-        '<h1 class="game-over-title">GAME OVER</h1> <br><audio src="src/loser.mp3" autoplay loop></audio> <br> <img src="src/img/1.gif" alt="" class="modal-game-over-img"> <br> <button id="btn-restart" class="modal__btn modal__btn--2">Reestart</button>';
+        '<h1 class="game-over-title">GAME OVER</h1> <br><audio src="src/loser.mp3" autoplay loop></audio> <br> <img src="src/img/1.gif" alt="" class="modal-game-over-img"> <br> <button id="btn-reestart" class="modal__btn modal__btn--2">Restart</button>';
       modalGameOver.style.display = "flex";
       modalGameOver.style.flexDirection = "column";
 
